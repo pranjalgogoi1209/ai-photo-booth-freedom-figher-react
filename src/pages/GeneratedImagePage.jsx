@@ -112,7 +112,7 @@ const GeneratedImageWrapper = styled.div`
         width: 100%;
         height: 100%;
         box-shadow: 0.2vh 0.2vh 0.8vh rgba(0, 0, 0, 0.5);
-        border-radius: 3.5vh;
+        /* border-radius: 3.5vh; */
       }
       .frame {
         position: absolute;
