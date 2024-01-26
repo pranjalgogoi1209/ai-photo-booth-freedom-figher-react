@@ -21,7 +21,9 @@ export default function HomePage() {
       <header>
         <h1>AI Photobooth Generator</h1>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to={"/"}>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
       </header>
       {/* header ends here */}

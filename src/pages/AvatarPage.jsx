@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -66,7 +67,9 @@ export default function AvatarPage({ capturedImage, setGeneratedImage }) {
           <h1>Select Your Avatar</h1>
         </div>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to={"/"}>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
       </header>
       {/* header ends here */}
@@ -88,7 +91,7 @@ export default function AvatarPage({ capturedImage, setGeneratedImage }) {
               }}
             >
               <div className="imageParent">
-                <img src={src} alt="super hero" />
+                <img src={src} alt="freedom fighter" />
                 <div className="imageHoverContainer"></div>
               </div>
               <img

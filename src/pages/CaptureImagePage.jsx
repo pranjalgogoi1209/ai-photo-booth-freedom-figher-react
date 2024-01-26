@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Webcam from "react-webcam";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -67,7 +68,9 @@ export default function CaptureImagePage({ setCapturedImg }) {
         </div>
       </div>
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <ToastContainer />
     </CaptureImageWrapper>

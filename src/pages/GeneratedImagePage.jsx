@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import exportAsImage from "../utils/exportAsImage";
 import logo from "./../assets/logo.png";
@@ -23,7 +24,9 @@ export default function GeneratedImagePage({ generatedImage }) {
           <h1>Download Your Image</h1>
         </div>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to={"/"}>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
       </header>
       {/* header ends here */}
