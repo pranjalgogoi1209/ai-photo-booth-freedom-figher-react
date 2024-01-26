@@ -121,8 +121,8 @@ const GeneratedImageWrapper = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        width: 101%;
-        height: 101%;
+        width: 100.3%;
+        height: 100%;
       }
     }
 
