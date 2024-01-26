@@ -47,7 +47,7 @@ export default function GeneratedImagePage({ generatedImage }) {
         </div>
       ) : (
         <div className="loading">
-          <div class="lds-ring">
+          <div className="lds-ring">
             <div></div>
             <div></div>
             <div></div>

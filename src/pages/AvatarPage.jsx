@@ -13,8 +13,8 @@ export default function AvatarPage({ capturedImage, setGeneratedImage }) {
   const [selectedImageIndex, setSelectedImageIndex] = useState();
   const [selectedImage, setSelectedImage] = useState();
 
-  capturedImage && console.log("capturedImage =>", capturedImage);
-  selectedImage && console.log("selectedImage =>", selectedImage);
+  capturedImage && console.log("capturedImage =>", capturedImage.split(",")[1]);
+  selectedImage && console.log("selectedImage =>", selectedImage.split(",")[1]);
 
   // converting selectedImage to base64 format
   const canvas = document.createElement("canvas");
@@ -154,7 +154,7 @@ const AvatarPageWrapper = styled.div`
     justify-content: flex-start;
     gap: 1.5vw;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 45vw;
     width: 70%;
     margin: 1vw auto 0 auto;
     .singleImageContainer {
@@ -242,14 +242,13 @@ const AvatarPageWrapper = styled.div`
   }
   /* footer ends here */
 
-  /* for big screens */
-  @media screen and (min-width: 1440px) {
+  /*   @media screen and (min-width: 1440px) {
     main {
+      background-color: red;
       height: 100vh;
     }
   }
 
-  /* for laptop screens */
   @media screen and (max-width: 1440px) {
     main {
       height: 95vh;
@@ -273,15 +272,11 @@ const AvatarPageWrapper = styled.div`
       height: 90vh;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     background: url("./../src/assets/tablet-background-image.png");
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    height: 100vh;
-    /* border: 10px solid red; */
-    main {
-      height: 70vh;
-    }
-  }
+    height: 100%;
+  }*/
 `;
