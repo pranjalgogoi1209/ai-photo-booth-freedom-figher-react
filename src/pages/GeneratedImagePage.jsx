@@ -122,7 +122,7 @@ const GeneratedImageWrapper = styled.div`
         top: 0;
         left: 0;
         width: 100.3%;
-        height: 100%;
+        height: 100.3%;
       }
     }
 
