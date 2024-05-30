@@ -43,9 +43,10 @@ export default function AvatarPage({ capturedImage, setGeneratedImage }) {
     setGeneratedImage("");
     if (selectedImage) {
       axios
-        .post("https://03f2-103-17-110-127.ngrok-free.app/rec", {
+        .post("https://h.ngrok.dev/rec", {
           image: capturedImage.split(",")[1],
           choice: selectedImage.split(",")[1],
+          status: "PREMIUM",
         })
         .then(function (response) {
           console.log(response);
